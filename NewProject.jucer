@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="n2yx32" name="JRod OpenGL" projectType="audioplug" useAppConfig="0"
+              addUsingNamespaceToJuceHeader="0" displaySplashScreen="1" jucerFormatVersion="1"
+              pluginFormats="buildVST3" pluginCharacteristicsValue="pluginIsSynth,pluginProducesMidiOut,pluginWantsMidiIn">
+  <MAINGROUP id="OXpJft" name="JRod OpenGL">
+    <GROUP id="{E1B2B332-59B8-C118-99D9-2EE8B0328791}" name="Source"/>
+    <GROUP id="{0254896C-A147-F719-A197-DF2B9A1C2D97}" name="Source">
+      <FILE id="PivmO1" name="texture.png" compile="0" resource="1" file="../../../../Downloads/texture.png"/>
+      <FILE id="oaVF9k" name="SynthSound.cpp" compile="1" resource="0" file="Source/SynthSound.cpp"/>
+      <FILE id="Ud5bTb" name="SynthSound.h" compile="0" resource="0" file="Source/SynthSound.h"/>
+      <FILE id="pDejMm" name="SynthVoice.cpp" compile="1" resource="0" file="Source/SynthVoice.cpp"/>
+      <FILE id="ngIf58" name="SynthVoice.h" compile="0" resource="0" file="Source/SynthVoice.h"/>
+      <FILE id="afGhox" name="WavetableModule.cpp" compile="1" resource="0"
+            file="Source/WavetableModule.cpp"/>
+      <FILE id="q7lkK7" name="WavetableModule.h" compile="0" resource="0"
+            file="Source/WavetableModule.h"/>
+      <FILE id="zbIsrM" name="EnvelopModule.cpp" compile="1" resource="0"
+            file="Source/EnvelopModule.cpp"/>
+      <FILE id="xCuMay" name="EnvelopModule.h" compile="0" resource="0" file="Source/EnvelopModule.h"/>
+      <FILE id="PP1ebL" name="MyKnobLF.cpp" compile="1" resource="0" file="Source/MyKnobLF.cpp"/>
+      <FILE id="dwmoMG" name="MyKnobLF.h" compile="0" resource="0" file="Source/MyKnobLF.h"/>
+      <FILE id="R9JAzS" name="DialModule.cpp" compile="1" resource="0" file="Source/DialModule.cpp"/>
+      <FILE id="JwUiqh" name="DialModule.h" compile="0" resource="0" file="Source/DialModule.h"/>
+      <FILE id="ATyXj0" name="OpenGLComponent.cpp" compile="1" resource="0"
+            file="Source/OpenGLComponent.cpp"/>
+      <FILE id="ktmfdZ" name="OpenGLComponent.h" compile="0" resource="0"
+            file="Source/OpenGLComponent.h"/>
+      <FILE id="ORCxIf" name="PluginProcessor.cpp" compile="1" resource="0"
+            file="Source/PluginProcessor.cpp"/>
+      <FILE id="sg6FPI" name="PluginProcessor.h" compile="0" resource="0"
+            file="Source/PluginProcessor.h"/>
+      <FILE id="KlwdEG" name="PluginEditor.cpp" compile="1" resource="0"
+            file="Source/PluginEditor.cpp"/>
+      <FILE id="pdAT2f" name="PluginEditor.h" compile="0" resource="0" file="Source/PluginEditor.h"/>
+    </GROUP>
+  </MAINGROUP>
+  <JUCEOPTIONS JUCE_STRICT_REFCOUNTEDPOINTER="1" JUCE_VST3_CAN_REPLACE_VST2="0"
+               FOLEYS_ENABLE_OPEN_GL_CONTEXT="1" FOLEYS_ENABLE_BINARY_DATA="1"
+               FOLEYS_SHOW_GUI_EDITOR_PALLETTE="1"/>
+  <EXPORTFORMATS>
+    <VS2019 targetFolder="Builds/VisualStudio2019">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="0" name="Release" targetName="NewProject"/>
+        <CONFIGURATION isDebug="1" name="Debug" targetName="NewProject" winArchitecture="x64"
+                       defines="CURL_LIB=libcurl_a.lib" usePrecompiledHeaderFile="0"
+                       useRuntimeLibDLL="0" winWarningLevel="2" headerPath="C:\Users\wolfk\Desktop\JUCE\JUCE\JRod Gnarlie OpenGL VST\AI;C:\Users\wolfk\Desktop\JUCE\JUCE\JRod Gnarlie OpenGL VST\Builds\VisualStudio2019\curl-8.0.1\curl-8.0.1\builds\libcurl-vc-x86-release-static-ipv6-sspi-schannel\include;"
+                       libraryPath="C:\Users\wolfk\Desktop\JUCE\JUCE\JRod Gnarlie OpenGL VST\Builds\VisualStudio2019\curl-8.0.1\curl-8.0.1\builds\libcurl-vc-x86-release-static-ipv6-sspi-schannel\lib;C:\Users\wolfk\Desktop\JUCE\JUCE\JRod Gnarlie OpenGL VST\Builds\VisualStudio2019\curl-8.0.1\curl-8.0.1\lib"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_audio_basics" path="C:\Users\wolfk\Desktop\JUCE\JUCE\modules"/>
+        <MODULEPATH id="juce_audio_devices" path="C:\Users\wolfk\Desktop\JUCE\JUCE\modules"/>
+        <MODULEPATH id="juce_audio_formats" path="C:\Users\wolfk\Desktop\JUCE\JUCE\modules"/>
+        <MODULEPATH id="juce_audio_plugin_client" path="C:\Users\wolfk\Desktop\JUCE\JUCE\modules"/>
+        <MODULEPATH id="juce_audio_processors" path="C:\Users\wolfk\Desktop\JUCE\JUCE\modules"/>
+        <MODULEPATH id="juce_audio_utils" path="C:\Users\wolfk\Desktop\JUCE\JUCE\modules"/>
+        <MODULEPATH id="juce_core" path="C:\Users\wolfk\Desktop\JUCE\JUCE\modules"/>
+        <MODULEPATH id="juce_data_structures" path="C:\Users\wolfk\Desktop\JUCE\JUCE\modules"/>
+        <MODULEPATH id="juce_events" path="C:\Users\wolfk\Desktop\JUCE\JUCE\modules"/>
+        <MODULEPATH id="juce_graphics" path="C:\Users\wolfk\Desktop\JUCE\JUCE\modules"/>
+        <MODULEPATH id="juce_gui_basics" path="C:\Users\wolfk\Desktop\JUCE\JUCE\modules"/>
+        <MODULEPATH id="juce_gui_extra" path="C:\Users\wolfk\Desktop\JUCE\JUCE\modules"/>
+        <MODULEPATH id="juce_opengl" path="..\modules"/>
+        <MODULEPATH id="juce_dsp" path="../modules"/>
+      </MODULEPATHS>
+    </VS2019>
+  </EXPORTFORMATS>
+  <MODULES>
+    <MODULE id="juce_audio_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_devices" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_formats" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_plugin_client" showAllCode="1" useLocalCopy="0"
+            useGlobalPath="1"/>
+    <MODULE id="juce_audio_processors" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_utils" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_dsp" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_opengl" showAllCode="1" useLocalCopy="1" useGlobalPath="0"/>
+  </MODULES>
+</JUCERPROJECT>
